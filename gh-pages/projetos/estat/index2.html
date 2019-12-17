@@ -17,6 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style2.css">
     <link rel="stylesheet" href="./assets/css/styleNumber.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--        AUTOR DO EFEITO: Copyright (c) 2014 Alvaro Trigo <alvaro@alvarotrigo.com> -->
@@ -25,7 +26,7 @@
 
 </head>
 
-<body onLoad="atualizaContador()">
+<body onLoad="atualizaContador()" class="animate fadeIn delay-1 duration-3s">
     <!-- <ul id="menu">
         <li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
         <li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
@@ -36,7 +37,7 @@
 
 
     <div id="pagepiling">
-        <div class="section" id="section1">
+        <div class="section" id="section1" onload="centerContent('section1')" style="margin-top: 0;">
             <video autoplay loop muted id="myVideo">
                 <source src="./assets/imagens/file.mp4" type="video/mp4">
             </video>
@@ -167,14 +168,7 @@
 
             </div>
         </div>
-
-
-
-
-
-
-
-        <div class="section" id="section2">
+        <div class="section" id="section2" onload="centerContent('section2')" style="margin-top: 0;">
             <div class="intro">
                 <h1 style="font-family: 'Anton', sans-serif;">SOBRE</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellendus, nostrum id necessitatibus
@@ -182,7 +176,7 @@
                     exercitationem aliquid! At laboriosam aut voluptate quos.</p>
             </div>
         </div>
-        <div class="section" id="section4">
+        <div class="section" id="section3" onload="centerContent('section3')" style="margin-top: 0;">
             <div class="intro">
                 <h1 style="font-family: 'Anton', sans-serif;">SOBRE1</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, facere incidunt maxime ratione eos
@@ -317,23 +311,20 @@
                 setTimeout(atualizaContador, 1000);
             }
         }
-        function centerContent(){
+        function centerContent(sect){
             // tamanho da janela do usuário
             var alturaTelaUser = window.innerHeight;
-            var alturaConteudo = document.height;
+            var alturaSection = document.getElementById(sect);
+            var x = alturaTelaUser - alturaSection;
 
-            var x = alturaTelaUser - alturaConteudo;
-
-            // while(y=1){
-                if(x<0){ // conteúdo > tela
-                    x = ((-1)*x)/2;
-                } else if(x>0){ // conteúdo < tela
-                    x = x/4;
-                    document.getElementById('firstElement').style.marginTop = x + 'px';
-                } else{
-            
-                }
-            // }
+            if(x<0){ // conteúdo > tela
+                x = ((-1)*x)/2;
+            } else if(x>0){ // conteúdo < tela
+                x = x/4;
+                document.getElementById('firstElement').style.marginTop = x + 'px';
+            } else{
+        
+            }
         }
 
 
