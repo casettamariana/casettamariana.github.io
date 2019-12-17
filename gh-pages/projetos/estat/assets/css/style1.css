@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#pagepiling .section{
+    text-align: center;
+}
+
+#pagepiling .section h2{
+    color: #fff;
+    font-size: 10em;
+    text-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+#pagepiling .section.sec1{
+    background: url('../imagens/teste/1.jpg');
+    background-size: cover;
+}
+#pagepiling .section.sec2{
+    background: url('../imagens/teste/2.jpg');
+    background-size: cover;
+}
+#pagepiling .section.sec3{
+    background: url('../imagens/teste/3.jpg');
+    background-size: cover;
+}
+#pagepiling .section.sec4{
+    background: url('../imagens/teste/4.jpg');
+    background-size: cover;
+}

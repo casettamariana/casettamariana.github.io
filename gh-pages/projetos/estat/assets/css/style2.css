@@ -1,0 +1,265 @@
+a:link,
+a:visited,
+a:active {
+    text-decoration: none !important;
+    color: white !important;
+}
+/* Centered texts in each section
+* ------------- SECTIONS -------------------------- */
+.section{
+    text-align:center;
+}
+
+.filtro {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    background:
+        -webkit-radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.4) 46%),
+        -webkit-radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.4) 46%),
+        rgb(39, 60, 82, 0.267);
+    color: #f1f1f1;
+    width: 100%;
+    background-position: 0 0, 2px 2px;
+    background-size: 4px 4px, 4px 4px, cover;
+    filter: url(desaturate.svg#greyscale);
+    transition: 1.3s;
+    z-index: 9;
+    overflow-x: hidden; 
+}
+
+#myVideo{
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-image: url('../imagens/file.mp4');
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+}
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section1 .layer{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background:
+        -webkit-radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.4) 46%),
+        -webkit-radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.4) 46%),
+        rgb(39, 60, 82, 0.267);
+    background-position: 0 0, 2px 2px;
+    background-size: 4px 4px, 4px 4px, cover;
+    filter: url(desaturate.svg#greyscale);
+    
+}
+
+#section1 h1{
+    color:#fff;
+}
+
+#infoMenu li a{
+    color: #fff;
+}
+
+#section1{
+    overflow: hidden;
+}
+
+/* ------------- BOTÕES -------------------------- */
+.hb-fill-middle-bg::before {
+    position: absolute;
+    content: "";
+    background: #ffbf0079 !important;
+    transition-duration: 0.3s;
+    z-index: -1;
+    top: auto;
+    right: auto;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+
+}
+
+
+.hb-fill-middle-bg:hover::before {
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+}
+
+
+.hb-fill-middle-bg:hover {
+    background: #ffbf0079 !important;
+    transition: all 0.3s ease 0s;
+}
+
+
+.hb-fill-middle-bg::after {
+    position: absolute;
+    content: "";
+    background: #ffbf0079;
+    transition-duration: 0.8s;
+    z-index: -1;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+}
+
+
+.hb-fill-middle-bg:hover::after {
+    height: 50%;
+}
+
+.hbtn1 {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 0;
+    color: white;
+}
+
+.hbtn1 i {
+    padding-right: 8px;
+}
+
+.hbtn2 {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: solid 1px #ffc100;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 0;
+    color: white !important;
+}
+
+.hbtn2 i {
+    padding-right: 8px;
+}
+/* ------------- TRÊS PONTOS -------------------------- */
+.tresPontos1 {
+    animation-name: tresP;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+
+}
+
+.tresPontos2 {
+    animation-name: tresP;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.95, .121, .149, .174);
+    animation-iteration-count: infinite;
+
+}
+
+.tresPontos3 {
+    animation-name: tresP;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.177, .203, .232, .257);
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes tresP {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(15px);
+        opacity: 0;
+    }
+}
+/* ------------- RESPONSIVO -------------------------- */
+
+@media (max-width: 575.98px){
+    .text1 {font-size: 70px !important; margin-bottom: -45px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 60px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 576px) and (max-width: 667.98px){
+    .text1 {font-size: 80px !important; margin-bottom: -45px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 60px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 668px) and (max-width: 767.98px){
+    .text1 {font-size: 80px !important; margin-bottom: -45px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 65px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 768px) and (max-width: 891.98px){
+    .text1 {font-size: 80px !important; margin-bottom: -45px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 65px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 892px) and (max-width: 991.98px){
+    .text1 {font-size: 85px !important; margin-bottom: -55px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 65px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 992px) and (max-width: 1000.98px){
+    .text1 {font-size: 85px !important; margin-bottom: -55px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 75px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 1001px) and (max-width: 1099.98px){
+    .text1 {font-size: 85px !important; margin-bottom: -55px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 75px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 1100px) and (max-width: 1100.98px){
+    .text1 {font-size: 90px !important; margin-bottom: -65px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 75px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 1101px) and (max-width: 1199.98px){
+    .text1 {font-size: 90px !important; margin-bottom: -65px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 85px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+
+@media (min-width: 1200px) and (max-width: 1299.98px){
+    .text1 {font-size: 90px !important; margin-bottom: -65px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 85px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+@media (min-width: 1300px) and (max-width: 1399.98px){
+    .text1 {font-size: 90px !important; margin-bottom: -65px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 85px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}
+@media (min-width: 1400px){
+    .text1 {font-size: 110px !important; margin-bottom: -75px; color: white; font-family: PeachesandCreamRegularW00;z-index: 2;padding: 0;}
+    .text2 {font-size: 105px !important;color: #ffc100 !important; z-index: 1;font-family: 'Anton', sans-serif; padding: 0;}
+}

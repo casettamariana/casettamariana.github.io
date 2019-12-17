@@ -1,0 +1,532 @@
+a:link,
+a:visited,
+a:active {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    background:
+        -webkit-radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.4) 46%),
+        -webkit-radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.4) 46%),
+        rgb(39, 60, 82, 0.267);
+    color: #f1f1f1;
+    width: 100%;
+    background-position: 0 0, 2px 2px;
+    background-size: 4px 4px, 4px 4px, cover;
+    filter: url(desaturate.svg#greyscale);
+    transition: 1.3s;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+.tresPontos1 {
+    animation-name: tresP;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+
+}
+
+.tresPontos2 {
+    animation-name: tresP;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.95, .121, .149, .174);
+    animation-iteration-count: infinite;
+
+}
+
+.tresPontos3 {
+    animation-name: tresP;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.177, .203, .232, .257);
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes tresP {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(15px);
+        opacity: 0;
+    }
+}
+
+input{
+    width: 500px; 
+    color: rgb(137, 130, 150); 
+    font-weight: 500; 
+    font-size: 24px; 
+    border-radius: 25px;
+    height: 50px;
+    background: transparent;
+}
+.animationApDp {
+    animation-name: tresP;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+}
+.hb-fill-middle-bg::before {
+    position: absolute;
+    content: "";
+    background: #ffbf0079 !important;
+    transition-duration: 0.3s;
+    z-index: -1;
+    top: auto;
+    right: auto;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+
+}
+
+
+.hb-fill-middle-bg:hover::before {
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+}
+
+
+.hb-fill-middle-bg:hover {
+    background: #ffbf0079 !important;
+    transition: all 0.3s ease 0s;
+}
+
+
+.hb-fill-middle-bg::after {
+    position: absolute;
+    content: "";
+    background: #ffbf0079;
+    transition-duration: 0.8s;
+    z-index: -1;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+}
+
+
+.hb-fill-middle-bg:hover::after {
+    height: 50%;
+}
+
+.hbtn1 {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.hbtn1 i {
+    padding-right: 8px;
+}
+
+.hbtn2 {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: solid 1px #ffc100;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.hbtn2 i {
+    padding-right: 8px;
+}
+
+.hb {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: solid 1px #ffc100;
+    font-weight: 500;
+    text-decoration: none;
+    z-index: 0;
+    background: transparent;
+    color: white !important;
+    margin-top: 3%;
+}
+.hb i {
+    padding-right: 8px;
+}
+
+.text1 {
+    color: white;
+    font-family: PeachesandCreamRegularW00;
+    z-index: 2;
+    font-size: 110px !important;
+    padding: 0;
+    margin-bottom: -75px;
+}
+
+.text2 {
+    color: #ffc100;
+    z-index: 1;
+    font-family: 'Anton', sans-serif;
+    font-size: 105px !important;
+    padding: 0;
+}
+
+
+.mousey {
+    width: 3px;
+    padding: 5px 10px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+    box-shadow: 1px 1px 6px black;
+}
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+.scroll-downs {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: 0;
+    /* width: 34px; */
+    height: 55px;
+    /* padding-top: 50px; */
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+@media (min-width: 481px)  {
+    .mousey {
+        margin-left: 42% !important;
+        margin-top: 6px !important;
+    }
+    .textt1{
+        margin-top: 80px !important;
+    }
+}
+
+
+
+@media (max-width: 575.98px) {
+
+    .textt1{
+        margin-top: 45px !important;
+    }
+    .text1 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 50px !important;
+        padding: 0;
+        margin-bottom: -35px;
+    }
+
+    .text2 {
+        color: #ffc100;
+        z-index: 1;
+        font-family: 'Anton', sans-serif;
+        font-size: 45px !important;
+        padding: 0;
+    }
+
+    .text3 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 50px !important;
+        padding: 0;
+        margin-bottom: -75px;
+    }
+    .hts{
+        margin-top: -35px !important;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .text1 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 70px !important;
+        padding: 0;
+        margin-bottom: -50px;
+    }
+
+    .text2 {
+        color: #ffc100;
+        z-index: 1;
+        font-family: 'Anton', sans-serif;
+        font-size: 63px !important;
+        text-align: center;
+        padding: 0;
+    }
+
+    .text3 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 70px !important;
+        padding: 0;
+        margin-bottom: -75px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .text1 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 80px !important;
+        padding: 0;
+        margin-bottom: -70px;
+    }
+
+    .text2 {
+        color: #ffc100;
+        z-index: 1;
+        font-family: 'Anton', sans-serif;
+        font-size: 80px !important;
+        padding: 0;
+    }
+
+    .text3 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 70px !important;
+        padding: 0;
+        margin-bottom: -75px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .text1 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 130px !important;
+        padding: 0;
+        margin-bottom: -80px;
+    }
+
+    .text2 {
+        color: #ffc100;
+        z-index: 1;
+        font-family: 'Anton', sans-serif;
+        font-size: 105px !important;
+        padding: 0;
+    }
+
+    .text3 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 70px !important;
+        padding: 0;
+        margin-bottom: -75px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1299.98px){
+    .text1 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 130px !important;
+        padding: 0;
+        margin-bottom: -80px;
+    }
+
+    .text2 {
+        color: #ffc100;
+        z-index: 1;
+        font-family: 'Anton', sans-serif;
+        font-size: 105px !important;
+        padding: 0;
+    }
+
+    .text3 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 70px !important;
+        padding: 0;
+        margin-bottom: -75px;
+    }
+}
+/* tela mari */
+@media (min-width: 1300px) and (max-width: 1399.98px){
+    .text1 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 120px !important;
+        padding: 0;
+        margin-bottom: -80px;
+    }
+
+    .text2 {
+        color: #ffc100;
+        z-index: 1;
+        font-family: 'Anton', sans-serif;
+        font-size: 95px !important;
+        padding: 0;
+    }
+
+    .text3 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 70px !important;
+        padding: 0;
+        margin-bottom: -75px;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1599.98px){
+    .text1 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 125px !important;
+        padding: 0;
+        margin-bottom: -80px;
+    }
+
+    .text2 {
+        color: #ffc100;
+        z-index: 1;
+        font-family: 'Anton', sans-serif;
+        font-size: 105px !important;
+        padding: 0;
+    }
+
+    .text3 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 70px !important;
+        padding: 0;
+        margin-bottom: -75px;
+    }
+    .marginNav{
+        margin-top: 3%;
+    }
+}
+@media (min-width: 1600px){
+    .text1 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 130px !important;
+        padding: 0;
+        margin-bottom: -80px;
+    }
+
+    .text2 {
+        color: #ffc100;
+        z-index: 1;
+        font-family: 'Anton', sans-serif;
+        font-size: 110px !important;
+        padding: 0;
+    }
+
+    .text3 {
+        color: white;
+        font-family: PeachesandCreamRegularW00;
+        z-index: 2;
+        font-size: 70px !important;
+        padding: 0;
+        margin-bottom: -75px;
+    }
+    .marginCorpoSite{
+        margin: 2.5%;
+    }
+    .marginNav{
+        margin-top: 4%;
+    }
+}
+
+

@@ -1,0 +1,449 @@
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+@keyframes auto-progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+.preload {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    color: white;
+    background: url('../imagens/0e8b.gif')no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-size: cover;
+}
+@media (max-width: 349.98px) {
+    .progress-bar {
+        background-color: #f1f1f1;
+        height: 25px;
+        width: 220px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #fff inset, 0 1px 0 #fff;
+    }
+
+    .stripes {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg,
+                #f1f1f1 25%,
+                transparent 25%,
+                transparent 50%,
+                #f1f1f1 50%,
+                #f1f1f1 75%,
+                transparent 75%,
+                transparent);
+        border-radius: 25px 25px 25px 25px;
+
+    }
+
+    .stripes.animated {
+        animation: animate-stripes 0.6s linear infinite;
+    }
+
+    .stripes.animated.slower {
+        animation-duration: 1.25s;
+    }
+
+    .stripes.reverse {
+        animation-direction: reverse;
+    }
+
+    .progress-bar-inner {
+        display: block;
+        height: 35px;
+        width: 0%;
+        background-color: #40527f;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 1px 0 #40527f inset;
+        position: relative;
+        animation: auto-progress 10s infinite linear;
+    }
+    .marginProgressBar{
+        margin-top: -18%;
+        margin-bottom: 15%;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 576px) {
+    .progress-bar {
+        background-color: #f1f1f1;
+        height: 25px;
+        width: 220px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #fff inset, 0 1px 0 #fff;
+    }
+
+    .stripes {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg,
+            #f1f1f1 25%,
+            transparent 25%,
+            transparent 50%,
+            #f1f1f1 50%,
+            #f1f1f1 75%,
+            transparent 75%,
+            transparent);
+        border-radius: 25px 25px 25px 25px;
+
+    }
+
+    .stripes.animated {
+        animation: animate-stripes 0.6s linear infinite;
+    }
+
+    .stripes.animated.slower {
+        animation-duration: 1.25s;
+    }
+
+    .stripes.reverse {
+        animation-direction: reverse;
+    }
+
+    .progress-bar-inner {
+        display: block;
+        height: 35px;
+        width: 0%;
+        background-color: #40527f;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 1px 0 #40527f inset;
+        position: relative;
+        animation: auto-progress 10s infinite linear;
+    }
+    .marginProgressBar{
+        margin-top: -8%;
+        margin-bottom: 5%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .progress-bar {
+        background-color: #f1f1f41
+        height: 25px;
+        width: 350px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #fff inset, 0 1px 0 #fff;
+    }
+
+    .stripes {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg,
+                #f1f1f1 25%,
+                transparent 25%,
+                transparent 50%,
+                #f1f1f1 50%,
+                #f1f1f1 75%,
+                transparent 75%,
+                transparent);
+        border-radius: 25px 25px 25px 25px;
+
+    }
+
+    .stripes.animated {
+        animation: animate-stripes 0.6s linear infinite;
+    }
+
+    .stripes.animated.slower {
+        animation-duration: 1.25s;
+    }
+
+    .stripes.reverse {
+        animation-direction: reverse;
+    }
+
+    .progress-bar-inner {
+        display: block;
+        height: 25px;
+        width: 3%;
+        background-color: #40527f;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 1px 0 #40527f inset;
+        position: relative;
+        animation: auto-progress 10s infinite linear;
+    }
+    .marginProgressBar{
+        margin-top: -9%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .progress-bar {
+        background-color: #f1f1f1;
+        height: 25px;
+        width: 450px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #fff inset, 0 1px 0 #fff;
+    }
+
+    .stripes {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg,
+                #f1f1f1 25%,
+                transparent 25%,
+                transparent 50%,
+                #f1f1f1 50%,
+                #f1f1f1 75%,
+                transparent 75%,
+                transparent);
+        border-radius: 25px 25px 25px 25px;
+
+    }
+
+    .stripes.animated {
+        animation: animate-stripes 0.6s linear infinite;
+    }
+
+    .stripes.animated.slower {
+        animation-duration: 1.25s;
+    }
+
+    .stripes.reverse {
+        animation-direction: reverse;
+    }
+
+    .progress-bar-inner {
+        display: block;
+        height: 25px;
+        width: 0%;
+        background-color: #40527f;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 1px 0 #40527f inset;
+        position: relative;
+        animation: auto-progress 10s infinite linear;
+    }
+    .marginProgressBar{
+        margin-top: -7%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .progress-bar {
+        background-color: #f1f1f1;
+        height: 30px;
+        width: 450px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #fff inset, 0 1px 0 #fff;
+    }
+
+    .stripes {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg,
+                #f1f1f1 25%,
+                transparent 25%,
+                transparent 50%,
+                #f1f1f1 50%,
+                #f1f1f1 75%,
+                transparent 75%,
+                transparent);
+        border-radius: 25px 25px 25px 25px;
+
+    }
+
+    .stripes.animated {
+        animation: animate-stripes 0.6s linear infinite;
+    }
+
+    .stripes.animated.slower {
+        animation-duration: 1.25s;
+    }
+
+    .stripes.reverse {
+        animation-direction: reverse;
+    }
+
+    .progress-bar-inner {
+        display: block;
+        height: 30px;
+        width: 0%;
+        background-color: #40527f;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 1px 0 #40527f inset;
+        position: relative;
+        animation: auto-progress 10s infinite linear;
+    }
+    .marginProgressBar{
+        margin-top: -4.5%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .progress-bar {
+        background-color: #f1f1f1;
+        height: 35px;
+        width: 450px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #fff inset, 0 1px 0 #fff;
+    }
+
+    .stripes {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg,
+                #f1f1f1 25%,
+                transparent 25%,
+                transparent 50%,
+                #f1f1f1 50%,
+                #f1f1f1 75%,
+                transparent 75%,
+                transparent);
+        border-radius: 25px 25px 25px 25px;
+
+    }
+
+    .stripes.animated {
+        animation: animate-stripes 0.6s linear infinite;
+    }
+
+    .stripes.animated.slower {
+        animation-duration: 1.25s;
+    }
+
+    .stripes.reverse {
+        animation-direction: reverse;
+    }
+
+    .progress-bar-inner {
+        display: block;
+        height: 35px;
+        width: 0%;
+        background-color: #40527f;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 1px 0 #40527f inset;
+        position: relative;
+        animation: auto-progress 10s infinite linear;
+    }
+    .marginProgressBar{
+        margin-top: -3%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .progress-bar {
+        background-color: #f1f1f1;
+        height: 45px;
+        width: 450px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #fff inset, 0 1px 0 #fff;
+    }
+
+    .stripes {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg,
+                #f1f1f1 25%,
+                transparent 25%,
+                transparent 50%,
+                #f1f1f1 50%,
+                #f1f1f1 75%,
+                transparent 75%,
+                transparent);
+        border-radius: 25px 25px 25px 25px;
+
+    }
+
+    .stripes.animated {
+        animation: animate-stripes 0.6s linear infinite;
+    }
+
+    .stripes.animated.slower {
+        animation-duration: 1.25s;
+    }
+
+    .stripes.reverse {
+        animation-direction: reverse;
+    }
+
+    .progress-bar-inner {
+        display: block;
+        height: 45px;
+        width: 0%;
+        background-color: #40527f;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 1px 0 #40527f inset;
+        position: relative;
+        animation: auto-progress 10s infinite linear;
+    }
+    .marginProgressBar{
+        margin-top: -4.5%;
+    }
+}
+
+
+@media (min-width: 1800.98px) {
+    .progress-bar {
+        background-color: #f1f1f1;
+        height: 45px;
+        width: 450px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #fff inset, 0 1px 0 #fff;
+    }
+
+    .stripes {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg,
+                #f1f1f1 25%,
+                transparent 25%,
+                transparent 50%,
+                #f1f1f1 50%,
+                #f1f1f1 75%,
+                transparent 75%,
+                transparent);
+        border-radius: 25px 25px 25px 25px;
+
+    }
+
+    .stripes.animated {
+        animation: animate-stripes 0.6s linear infinite;
+    }
+
+    .stripes.animated.slower {
+        animation-duration: 1.25s;
+    }
+
+    .stripes.reverse {
+        animation-direction: reverse;
+    }
+
+    .progress-bar-inner {
+        display: block;
+        height: 45px;
+        width: 0%;
+        background-color: #40527f;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 1px 0 #40527f inset;
+        position: relative;
+        animation: auto-progress 10s infinite linear;
+    }
+    .marginProgressBar{
+        margin-top: -2%;
+    }
+}

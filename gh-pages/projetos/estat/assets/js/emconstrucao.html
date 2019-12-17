@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Gestor de Inovação" />
+    <meta name="generator" content="Brackets" />
+    <meta name="description" content="Novo sistema do Projeto Estudantes de Atitude" />
+    <meta name="application-name"
+        content="Sistema de inovação da Gerência de Controle Social da Controladoria-Geral do Estado de Goiás" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Estudante de Atitude</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" type="image/jpg" href="imagens/favicon.png" />
+    <link rel="stylesheet" href="css/styleHovers.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/progressBar.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="../js/modernizr.js"></script>
+    <script src="./js/efeitoDePaginaEmConstrucao.js"></script>
+    <!-- SCRIPT para identificar tamanho da tela e deixar coneúdo no centro -->
+    <script>
+        window.onload = function () {
+
+            var sizeWindow = window.innerHeight;
+            var sizeNav = (document.getElementById('navbar').offsetHeight);
+            var sizeDiv1 = (document.getElementById('marginDiv').offsetHeight);
+            var sizeFooter = (document.getElementById('divfooter').offsetHeight);
+            var sizeBody = (sizeNav + sizeFooter + sizeDiv1);
+            var div = document.getElementById('n');
+            var divFooter = document.getElementById('divfooter');
+
+            //se a div for menor que o tamanho da tela
+            if (sizeBody < sizeWindow) {
+                var marginD = ((sizeWindow - sizeBody) / 2);
+                div.style.marginTop = marginD + 'px';
+
+
+            //se a div for igual que o tamanho da tela
+            } else if (sizeBody == sizeWindow) {
+                div.style.marginTop = '1%';
+                div.style.marginBottom = '0px';
+                
+            //se a div for maior que o tamanho da tela
+            } else if (sizeBody > sizeWindow) {
+                document.getElementById('emConstrucao').style.fontSize = '40px';
+                document.getElementById('p1').style.height = '20px';
+                document.getElementById('p2').style.height = '20px';
+                document.getElementById('divfooter').style.marginTop = '-4%';
+                div.style.marginTop = '3%';
+            }
+
+        }
+    </script>
+
+</head>
+
+<body id="idBodyEmContrucao" class="d-flex flex-column cd-about animated fadeIn delay-1s duration-3s">
+
+    <main>
+        <div class="cd-about cd-main-content">
+            <div id="n">
+                <nav id="navbar">
+                    <div id="efect1" class="row justify-content-center animated bounceInRight delay-1s">
+                        <a id="botaoVoltar" 
+                        style="text-decoration:none; font-size: 20px; color: #40527f; font-weight: 500;"
+                            class="cd-btn hbtn1 hb-fill-middle-bg boota22" 
+                            data-type="page-transition" id="btnVoltar"
+                            onclick="efeitoMudancaDePaginaEmContrucao('btnVoltar')">VOLTAR</a>
+                    </div>
+                </nav>
+            </div>
+            <div id="marginDiv">
+                <div class="content">
+                    <div class="container">
+                        <div id="efect2" class="row justify-content-center animated bounceInRight delay-1-5s">
+                            <img class="gifMedia" src="imagens/emconstrucao.gif">
+                        </div>
+                        <div id="efect3" class="row justify-content-center animated bounceInRight delay-2s">
+                            <h1 id="emConstrucao" class="textContrucao" 
+                            style="text-align: center; font-weight: 600; color: #40527f;">
+                                EM CONSTRUÇÃO
+                            </h1>
+                        </div>
+                        <div id="efect4" class="row justify-content-center marginProgressBar animated zoomIn delay-3-5s">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar stripes" id="p1">
+                                    <span class="progress-bar-inner" id="p2"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divfooter" class="footer">
+                <div id="efect5" class="row justify-content-center animated bounceInRight delay-2-5s">
+                    <div style="text-align: center; color: #40527f;" class="textDuvidas">DÚVIDAS? ENVIE UMA MENSAGEM!</div>
+                </div>
+                <div id="efect6" class="row justify-content-center animated bounceInRight delay-3s" 
+                    style="margin-top: 1%;">
+                    <a style="text-decoration:none; font-size: 14px; color: #40527f;" 
+                    class="hbtn hb-fill-middle-bg boota22" id="botaoDuvidas" target="_blank"
+                    onCLick="efeitoMudancaDePaginaEmContrucao('botaoDuvidas')">CLIQUE AQUI!</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="cd-cover-layer"></div>
+    <div class="cd-loading-bar"></div>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+   
+</body>
+
+
+
+</html>

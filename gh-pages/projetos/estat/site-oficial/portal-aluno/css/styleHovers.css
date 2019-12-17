@@ -1,0 +1,187 @@
+body{
+    overflow: hidden;
+}
+
+#progressbar{
+    margin: 20px;
+    width: 400px;
+    height: 8px;
+    position: relative;
+}
+
+
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: 2px solid #40527f;
+    text-decoration: none;
+    color: #ffffff;
+    white-space: nowrap;
+    z-index: 0;
+} 
+
+
+.hbtn i {
+    padding-right: 8px;
+} 
+
+.hbtn1 {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: 2px solid #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 0;
+} 
+
+
+.hbtn1 i {
+    padding-right: 8px;
+} 
+
+
+.hb-fill-middle-bg::before {
+    position: absolute;
+    content: "";
+    background: #40527f;
+    transition-duration: 0.3s;
+    z-index: -1;
+    top: auto;
+    right: auto;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+
+} 
+
+
+.hb-fill-middle-bg:hover::before {
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+} 
+
+
+.hb-fill-middle-bg:hover {
+    color: #ffffff !important;
+    background: #40527f;
+    transition: all 0.3s ease 0s;
+} 
+
+
+.hb-fill-middle-bg::after {
+    position: absolute;
+    content: "";
+    background: #40527f;
+    transition-duration: 0.3s;
+    z-index: -1;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+} 
+
+
+.hb-fill-middle-bg:hover::after {
+    height: 50%;
+} 
+
+.bord11{
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 5px;
+}
+
+@media (max-width: 349.98px) {
+    .gifMedia{
+        height: 50%;
+        width: 75%;
+    }
+    .textContrucao{
+        font-size: 28px;
+        margin-top: 15%;
+    }
+    .textDuvidas{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 576px) {
+    .gifMedia{
+        height: 30%;
+        width: 55%;
+    }
+    .textContrucao{
+        font-size: 28px;
+        margin-top: 2%;
+    }
+    .textDuvidas{
+        font-size: 12px;
+    }
+}
+
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .gifMedia{
+        height: 32%;
+        width: 65%;
+        margin-top: 2%;
+    }
+    .textContrucao{
+        font-size: 40px;
+    }
+ }
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .gifMedia{
+        height: 35%;
+        width: 50%;
+    }
+    .textContrucao{
+        font-size: 40px;
+    }
+ }
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    .gifMedia{
+        height: 25%;
+        width: 38%;
+    }
+    .textContrucao{
+        font-size:42px;
+    }
+ }
+ @media (min-width: 1200px) and (max-width: 1400px) {
+    .gifMedia{
+        height: 25%;
+        width: 30%;
+    }
+    .textContrucao{
+        font-size: 45px;
+        margin-bottom: 1%;
+    }
+ }
+ @media (min-width: 1401.98px) { 
+    .gifMedia{
+        height: 45%;
+        width: 50%;
+    }
+    .textContrucao{
+        font-size: 65px;
+    }
+    .textDuvidas{
+        margin-top: 5%;
+    }
+}

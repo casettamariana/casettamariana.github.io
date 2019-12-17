@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Estudante de Atitude</title>
+    
+    <!-- CSS do bootstrap -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS do bootstrap e jquery-->
+    <script src="../js/jquery-3.4.1.js"></script>
+    <link rel="icon" type="image/jpg" href="../imagens/favicon.png" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="./js/divAluProf.js"></script>
+    <script src="./js/efeitoTrocaDePagina.js"></script>
+    <link rel="stylesheet" href="./css/divAluProf.css" />
+    <link rel="stylesheet" href="./css/animate.css">
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147970163-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-147970163-1');
+    </script>
+
+    <!-- IDENTIFICAR TELA E ADEQUAR CONTEÚDO -->
+    <!-- <script>
+        window.onload = function () {
+            var sizeWindow = window.innerHeight;
+            var div = document.getElementById('marginAltura');
+            var sizeDIV = document.getElementById('marginAltura').offsetHeight;
+            var particles = document.getElementById('particles-js'); 
+
+            se a div for menor que o tamanho da tela
+             if (sizeDIV < sizeWindow) {
+                 var marginDIV = ((sizeWindow - sizeDIV) / 2);
+                 div.style.marginTop = marginDIV + 'px';
+             } 
+         }
+     </script>-->
+
+
+<body id="idBodyIndexDivisao" class="d-flex flex-column animated fadeIn delay-1s duration-3s">
+    <div id="particles-js" style="z-index: 0;"></div>
+
+    <div class="container d-none d-sm-block d-md-block d-lg-block d-xl-block" id="marginAltura" style="z-index: 2;">
+        <div id="op" style="display: block;">
+            <div class="row justify-content-center opacidadeAqui"
+                style="margin-top: 3%;">
+                <a class="navbar-brand" href="#">
+                    <img id='imgLogo' src="../imagens/ESTUDANTESDEATITUDE3.png" class="d-inline-block animated bounceInRight delay-1s imgLogoLogo"
+                        height="60" width="140" href="index.html">
+                </a>
+            </div>
+            <div class="row justify-content-center opacidadeAqui" style="margin-top: 2%;">
+                <div class="col-8">
+                    <h1 id="textBemVindo" class="textB animated bounceInRight delay-1-5s"
+                        style="color: #ffc100; font-family: 'Alfa Slab One', cursive; text-align: center; font-size: 60px;">
+                        SEJA BEM-VINDO</h1>
+                    <h1 id="idTextViagem" class="textBb animated bounceInRight delay-2s"
+                        style="color: #ffc100; font-family: 'Alfa Slab One', cursive; text-align: center; font-size: 30px; margin-top: -0.5%;">
+                        À NOSSA INTERGALÁTICA VIAGEM CIDADÃ!</h1>
+                </div>
+            </div>
+            <div id="imgAstr" class="row justify-content-center opacidadeAqui animated bounceInRight delay-2-5s">
+                <img id="imgAstronauta" class="  infinite bounce delay-3s imgAs" src="imagens/flotanSemFundo.png"
+                    height="350" width="500">
+            </div>
+            <div id="idTextSelecione" class="row justify-content-center opacidadeAqui animated bounceInRight delay-3s"
+                style="margin-bottom: 2%;">
+                <h3 class="textBba" style="color: white; font-family: 'Lobster', cursive; margin-top: 0.2%;">Para embarcar selecione
+                    seu perfil. Você é?</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="rowBotao">
+            <!-- BOTÃO ALUNO -->
+            <div id="displayAluno">
+                <div class="col-md-auto opacidadeAquiSeProfessor animated bounceInRight delay-3-5s" id="divAluno">
+                    <button id="botaoSouAluno" class="botaoAluno" onclick="efeitoMudancaDePagina('botaoSouAluno')">
+                        <span>SOU</span>
+                        <span style="font-weight: bolder;">ALUNO</span>
+                        <span> DE ATITUDE</span>
+                    </button>
+                </div>
+            </div>
+            <!-- BOTÃO PROFESSOR -->
+            <div id="displayProfessor">
+                <div class="col-md-auto opacidadeAquiSeAluno animated bounceInRight delay-4s" id="divProf">
+                    <button id="botaoSouProfessor" class="botaoProfessor"
+                        onclick="efeitoMudancaDePagina('botaoSouProfessor')">
+                        <span>SOU</span>
+                        <span style="font-weight: bolder;">PROFESSOR</span>
+                        <span> DE ATITUDE</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container d-block d-sm-block d-md-block d-lg-block d-xl-block">
+        
+    </div>
+
+
+
+
+
+
+
+
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="./js/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="./js/stats.min.js"></script>
+    <script src="./js/divAuluProfParticles.js"></script>
+
+
+
+</body>
+
+</html>
