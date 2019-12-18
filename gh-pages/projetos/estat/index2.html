@@ -46,10 +46,6 @@
                     <a class="hb-fill-middle-bg hbtn1" href="./site-oficial/portal-aluno/emconstrucao.html">IR PARA O
                         SITE OFICIAL &rarr;</a>
                 </div>
-                <!-- efeito -->
-                <div id="formcadastro" style="display:none">
-
-                </div>
                 <div class="row justify-content-center">
                     <h2 class="text1">
                         <span>Vem Aí, </span>
@@ -61,6 +57,12 @@
                 </div>
                 <div class="row justify-content-center" style="padding: 0; margin-top: -1%;">
                     <h1 class="text2" style="text-align: center;">ESTUDANTES DE ATITUDE</h1>
+                </div>
+
+                <div id="formcadastro" class="row justify-content-center" style="display: none;">
+                    <?php
+                        include 'formpreinscricao.php';
+                    ?>
                 </div>
 
 
@@ -132,6 +134,7 @@
 
                     </div>
                 </div>
+
 
 
                 <div id="textt1" class="row justify-content-center">
@@ -258,17 +261,15 @@
 
 
         function displayForm() {
-            var displayDoFor = document.getElementById('formcadastro');
-            var hb = document.getElementById('hbtn2h');
-            var te = document.getElementById('textt1');
-
+            var vetor = ['formcadastro', 'hbtn2h', 'textt1', 'text1', 'text1', 'text2', 'corpoSite', 'btnAp2'];
+            var tipoDisplay = ['']
+            document.getElementById('formcadastro').style.display = 'block';
+            document.getElementById('hbtn2h').style.display = 'none';
+            document.getElementById('textt1').style.display = 'none';
+            document.getElementById('text1').style.display = 'none';
+            document.getElementById('text2').style.display = 'none';
             document.getElementById('corpoSite').style.display = 'none';
-            displayDoFor.style.display = 'block';
-            te.style.display = 'none';
-            hb.style.display = 'none';
             document.getElementById('btnAp2').style.display = 'block';
-
-
         }
         function atualizaContador() {
             var YY = 2020;

@@ -104,7 +104,7 @@
         $('#cpf').mask('000.000.000-00');
         $('#telefone').mask('(00) 0 0000-0000');
         $.ajax({
-        url : "./actionPreInscricao.php",
+        url : "actionPreInscricao.php",
         type : 'post',
         data : {
 
@@ -133,7 +133,7 @@
             var nomeEscola = $('#escola').val();
             if(cpf.length == 14){
                 $.ajax({
-                url : "./actionPreInscricao.php",
+                url : "actionPreInscricao.php",
                 type : 'post',
                 data : {
                 action : "validarCpf",
@@ -174,7 +174,7 @@
             var dataForm = $('#idForm').serialize();
 
             $.ajax({
-            url : "./actionPreInscricao.php",
+            url : "actionPreInscricao.php",
             type : 'post',
             data : {
             action : "salvarInscricao",
